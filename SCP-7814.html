@@ -1,0 +1,279 @@
+from pathlib import Path
+
+path = Path("/mnt/data/SCP-7814.html")
+path.write_text("""
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SCP-7814</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle at top, #1a1a1a, #000);
+    color: #e0e0e0;
+}
+.header {
+    text-align: center;
+    padding: 30px 0 10px;
+}
+.header img {
+    width: 80px;
+    opacity: 0.9;
+}
+.header h1 {
+    letter-spacing: 4px;
+    font-size: 36px;
+    margin: 10px 0 0;
+}
+.header h2 {
+    font-size: 12px;
+    color: #999;
+    margin: 5px 0 0;
+}
+.container {
+    width: 900px;
+    margin: 0 auto 80px;
+    background: #0d0d0d;
+    box-shadow: 0 0 40px rgba(0,0,0,0.8);
+    padding: 30px;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #aa0000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.item {
+    font-size: 22px;
+    font-weight: bold;
+}
+.level {
+    font-size: 14px;
+    color: #aaa;
+}
+.object-class {
+    background: linear-gradient(90deg, #550000, #220000);
+    padding: 10px;
+    font-weight: bold;
+    color: #ff4d4d;
+    margin-bottom: 20px;
+}
+.section h3 {
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    color: #ccc;
+}
+.image-block {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.image-card {
+    background: #111;
+    border: 1px solid #333;
+    padding: 10px;
+    width: 260px;
+}
+.image-card img {
+    width: 100%;
+    filter: grayscale(100%) contrast(110%);
+}
+.caption {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 5px;
+}
+.quote {
+    background: #111;
+    border-left: 4px solid #aa0000;
+    padding: 10px;
+    margin: 20px 0;
+    font-style: italic;
+}
+.footer {
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    <img src="scp_logo.png" alt="SCP Foundation Logo">
+    <h1>SCP FOUNDATION</h1>
+    <h2>SECURE • CONTAIN • PROTECT</h2>
+</div>
+
+<div class="container">
+    <div class="topbar">
+        <div class="item">Item #: SCP-7814</div>
+        <div class="level">Level 2 — Restricted</div>
+    </div>
+
+    <div class="object-class">Object Class: SAFE (Conditional)</div>
+
+    <div class="section">
+        <h3>Special Containment Procedures</h3>
+        <p>
+        SCP-7814 is contained as an anomalous artifact under the custodianship of 
+		PoI-7814-1 (Tsougkouris Okkotsis), employed as a containment specialist at Site-45, located in Fterikoudi, Cyprus.
+        </p>
+        <p>
+        SCP-7814 is to remain in PoI-7814-1’s possession at all times. 
+		Transfer of SCP-7814 to other individuals has demonstrated no anomalous effects and is not recommended 
+		unless authorized by Site Command for testing purposes.
+		</p>
+        <p>
+		No attempts are to be made to forcibly reactivate SCP-7814 or induce manifestation of 
+		the associated anomalous entity (designated SCP-7814-A) without Level ██ approval.
+		</p>
+        <p>
+		Psychological monitoring of PoI-7814-1 is mandatory, with emphasis 
+		on stress response, identity displacement, and familial-role inferiority.
+        </p>
+    </div>
+
+    <div class="section">
+        <h3>Description</h3>
+        <p>
+        SCP-7814 is a metal ring of unknown composition, formerly utilized as a containment and control medium 
+		for an anomalous entity designated SCP-7814-A [informally referred to in archived documentation as “Rika”].
+        </p>
+        <p>
+        SCP-7814-A is confirmed to have been created through unknown means by Georgios Okkotsis, former head of the Gojo Clan 
+		and a long-term anomalous asset affiliated with the Foundation. During Georgios Okkotsis’ lifetime, SCP-7814-A was entirely stable, non-hostile, and responded exclusively
+		to his direct commands via ██ ██ ██████ ██ ████████ █████. No containment breaches or deviations were recorded during this period.
+        </p>
+        <p>
+        SCP-7814-A’s compliance parameters appear to have been uniquely attuned to Georgios Okkotsis. 
+		No other individual has successfully interacted with or activated SCP-7814-A due to ██ ███████ █████████ ████ ███████.
+        </p>
+    </div>
+
+    <div class="section">
+        <h3>Visual Documentation</h3>
+        <div class="image-block">
+            <div class="image-card">
+                <img src="rika_manifestation.png" alt="SCP-7814-A Manifestation">
+                <div class="caption">
+                    Fig. 1 — SCP-7814-A (Full Manifestation).  
+                    Image recovered from archived Site-██ surveillance.
+                </div>
+            </div>
+            <div class="image-card">
+                <img src="ring_artifact.png" alt="SCP-7814 Ring">
+                <div class="caption">
+                    Fig. 2 — SCP-7814.  
+                    Anomalous ring recovered from the Okkotsis estate.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Addendum 7814-1: Succession Record</h3>
+        <p>
+        Prior to his death from natural causes, Georgios Okkotsis personally gifted SCP-7814 to his granddaughter, Georgia Okkotsis, as a familial keepsake
+		and symbol of trust. At the time of transfer, SCP-7814 had already entered a state of reduced anomalous activity.
+		</p>
+        <p>
+		Following Georgios Okkotsis’s death, SCP-7814 became completely inert. 
+		No manifestations, responses, or detectable energy signatures associated with SCP-7814-A were recorded.
+		</p>
+        <p>
+		Several months later, the Gojo Clan intervened and reassigned SCP-7814 from Georgia Okkotsis to her younger brother, Tsougkouris Okkotsis, citing
+		internal evaluations classified under ██-██-██ that deemed him weaker than his sister in combat.
+		</p>
+        <p>
+		Despite objections from both siblings, the Gojo Clan insisted that SCP-7814 remain with Tsougkouris Okkotsis, 
+		designating it a protective charm rather than an operational artifact.
+        </p>
+    </div>
+	
+	<div class="section">
+        <h3>Addendum 7814-2: Anomalous Effects on Pol-7814-1</h3>
+        <p>
+        SCP-7814 exhibits no anomalous properties when worn by individuals outside the Okkotsis bloodline.
+		</p>
+        <p>
+		However, while in possession of SCP-7814, Tsougkouris Okkotsis demonstrates minor but repeatable deviations from human baseline, including:
+		</p>
+        <p>
+		- Elevated physical endurance during containment incidents
+		</p>
+        <p>
+		- Improved reaction timing under stress
+		</p>
+        <p>
+		- Short-term strength amplification during high-risk scenarios
+		</p>
+        <p>
+		These effects remain passive and limited in scope. SCP-7814-A has not manifested, communicated, or exerted independent agency.
+		</p>
+        <p>
+		Current Foundation theory attributes these effects to residual imprinting and biological compatibility unique to Georgios Okkotsis’s direct descendants via ██ ███████ ██ █████████ ██ ██████.
+        </p>
+    </div>
+	
+	<div class="section">
+        <h3>Addendum 7814-3: Employment at Site-45</h3>
+        <p>
+        Tsougkouris Okkotsis is currently employed as a containment specialist at Site-45, Fterikoudi, following Ethics Committee approval under Protocol ██-██.
+		</p>
+        <p>
+		The committee’s ruling states: 
+		“Continued proximity between PoI-7814-1 and SCP-7814 represents the most stable and lowest-risk containment configuration currently available.”
+		</p>
+        <p>
+		PoI-7814-1 has not been briefed on SCP-7814-A’s prior operational role beyond general archival summaries and has never witnessed manifestation activity.
+        </p>
+    </div>
+	
+	<div class="section">
+        <h3>Addendum 7814-4: Risk Assessment</h3>
+        <p>
+        SCP-7814 remains classified as Safe due to its current inert state. However, reclassification to Neutralized has been denied due to the following factors:
+		</p>
+        <p>
+		- Confirmed persistence of SCP-7814-A within the artifact
+		</p>
+        <p>
+		- Absence of a known reactivation method due to ██ █████████ ███████
+		</p>
+        <p>
+		- Genetic dependency on the Okkotsis lineage
+		</p>
+        <p>
+		Historical precedent of SCP-7814-A’s effectiveness under Georgios Okkotsis remains ██ █████████.
+		</p>
+        <p>
+		Predictive models indicate that SCP-7814-A, if reactivated, may not retain prior obedience parameters under ██ ███████ █████████.
+        </p>
+    </div>
+
+    <div class="section">
+        <h3>Closing Statement</h3>
+        <div class="quote">
+            SCP-7814 is dormant. It is not neutralized. It remains where containment is
+            most stable, in the hands of someone who was never meant to carry it.
+        </div>
+    </div>
+
+    <div class="footer">
+        SCP Foundation Internal Document — Unauthorized Access Prohibited
+    </div>
+</div>
+
+</body>
+</html>
+""")
+
+path
